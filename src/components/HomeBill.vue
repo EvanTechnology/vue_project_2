@@ -2,7 +2,7 @@
   <div class="col s12 m6 l4">
     <div class="card light-blue bill-card">
       <div class="card-content white-text">
-        <span class="card-title">Balance in different currencies</span>
+        <span class="card-title">Balance in selected currencies</span>
 
         <p v-for="cur of currencies" :key="cur" class="currency-line">
           <span>{{ getCurrency(cur) | currency(cur) }}</span>
@@ -21,7 +21,8 @@ export default {
   computed: {
     base() {
       return (
-        this.$store.getters.info.bill / (this.rates["AUD"] / this.rates["EUR"])
+        this.$store.getters.info.amount /
+        (this.rates["AUD"] / this.rates["EUR"])
       );
     }
   },

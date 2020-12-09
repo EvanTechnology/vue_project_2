@@ -25,7 +25,7 @@ export default {
           .database()
           .ref(`/users/${uid}/info`)
           .set({
-            bill: 10000,
+            amount: 1000,
             name: name
           });
       } catch (e) {

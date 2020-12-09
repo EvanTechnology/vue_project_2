@@ -22,7 +22,7 @@ export default {
       { title: "Account", url: "/", exact: true },
       { title: "History", url: "/history" },
       { title: "Planning", url: "/planning" },
-      { title: "Record", url: "/record" },
+      { title: "New Record", url: "/record" },
       { title: "Categories", url: "/categories" }
     ]
   })
