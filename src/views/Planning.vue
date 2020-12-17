@@ -1,7 +1,7 @@
 <template>
   <div class="app-page">
     <div class="page-title">
-      <h3>Планирование</h3>
+      <h3>Expenses</h3>
       <h4>{{ info.amount | currency("AUD") }}</h4>
     </div>
 
