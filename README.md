@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+users:
+
+konkov@gmail.com     password: 123456
+test@gmail.com       password: 123456
