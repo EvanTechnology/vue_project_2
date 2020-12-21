@@ -38,8 +38,14 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import { required } from "vuelidate/lib/validators";
+//import localeFilter from "@/filters/localize.filter";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$title("ProfileTitle")
+    };
+  },
   data: () => ({
     name: "",
     isAuLocale: true
